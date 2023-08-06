@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled's CRUDS</title>
+    <link rel="stylesheet" href="Test.css">
+    <link rel="shortcut icon" href="html and css test/IMG_6611.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="contanier">
+        <div id="nav">
+            <div id="content">
+                <h2>Khal<span>ed</span></h2>
+                <P>CRUDS</P>
+            </div>
+            <div id="log">
+                <fieldset id="LoginField">
+                    <legend>LoDa Login</legend>
+                    <form>
+                        <label for="Username">Username</label>
+                        <input type="text" name="Username" id="Username"> <br>
+                        <label for="Password">Password</label>
+                        <input type="password" name="Password" id="Password">
+                        <button type="submit" id="loginSubmit">Submit</button>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+        <div id="inputs">
+            <input type="text" name="Title" id="title" placeholder="Title">
+            <div id="InputsData">
+                <input onkeyup="GetTotalandChangeColoroftheTotal()" type="number" name="Price" id="price"
+                    placeholder="Price">
+                <input onkeyup="GetTotalandChangeColoroftheTotal()" type="number" name="Tex" id="tex" placeholder="Tex">
+                <input onkeyup="GetTotalandChangeColoroftheTotal()" type="number" name="Discount" id="discount"
+                    placeholder="Discount">
+                <input onkeyup="GetTotalandChangeColoroftheTotal()" type="number" name="ADS" id="ads" placeholder="ADS">
+                <small id="total"></small>
+            </div>
+            <div id="CCBTNS">
+                <input type="number" name="Count" id="count" placeholder="Count">
+                <input type="text" name="Catagory" id="catagory" placeholder="Producet Catagory">
+            </div>
+
+            <button onclick="SUBMIT()" id="submit">Create</button>
+            <div id="searchdata">
+                <input onkeyup="SearchInTable(this.value)" type="text" name="Searchbar" id="searchbar"
+                    placeholder="Search">
+
+                <div id="SearchBtns">
+                    <button onclick="SearchonBarBy(this.id)" id="SearchByTitle">Search By Title</button>
+                    <button onclick="SearchonBarBy(this.id)" id="SearchByCatagory">Search By Catagory</button>
+                </div>
+                <div id="DeleteAllBtn">
+
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>TEX</th>
+                    <th>Discount</th>
+                    <th>ADS</th>
+                    <th>Catagory</th>
+                    <th>Total</th>
+                    <th> Update </th>
+                    <th>Delete</th>
+                </tr>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    background-image: url('sea.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#contanier{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+#nav{
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+legend{
+    text-align: center;
+    color: blue;
+    font-weight: 700;
+}
+label{
+    font-weight: bold;
+}
+#Password, #Username{
+    background-color: rgba(245, 245, 245, 0.555);
+}
+form{
+    width: 100%;
+    display: block;
+}
+#loginSubmit{
+    transform: translateX(90px);
+    width: 50%;
+}
+#loginSubmit:hover{
+    letter-spacing: normal;
+}
+#nav h2{
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgba(26, 15, 189, 0.589);
+}
+span{
+    color: rgba(255, 0, 0, 0.836);
+}
+#nav p{
+    font-size: 25px;
+    font-weight: 800;
+}
+#total{
+    font-size: 20px;
+    background-color: rgb(6, 120, 226);
+}
+#total::before{
+    content: 'Total : ';
+}
+input{
+    outline: none;
+    border: none;
+    background-color: #333;
+    color: white;
+    transition: 0.5s;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+#title,#searchbar{
+    width: 100%;
+}
+#CCBTNS{
+    display: flex;
+    justify-content: space-around;
+}
+#count, #catagory{
+    width: 30%;
+}
+input:focus{
+    background: #111;
+    transform: scale(1.1);
+}
+button{
+    width: 100%;
+    background-color: rgb(148, 91, 5);
+    color: rgb(38, 33, 110);
+    border-radius: 20px;
+    padding: 8px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rgb(91, 149, 224);
+    letter-spacing: 2px;
+}
+#SearchBtns{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#SearchByTitle, #SearchByCatagory{
+    width: 40%;
+}
+table{
+width: 100%;
+color: rgb(46, 41, 41);
+text-align: center;
+margin: 25px;
+
+}
+table th{
+    text-transform: uppercase;
+    font-weight: 90px;
+}
+#tbody {
+    font-weight: 1000;
+    background-color: darkgray;
+}
+#Delete, #Update{
+    width: 70%;
+    letter-spacing: normal;
+}
